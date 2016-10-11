@@ -3,6 +3,7 @@
 	<Dimension Label="Source" Initial="" TargetName="Dimension Name" />
 	<Dimension Label="Destination" Initial="" TargetName="Dimension Name" />
 	<Measurement Label="Size" Initial="0"/>
+	<Text Label="Show Value in Label?" Type="checkbox" Initial="1" />
 
     	<Initiate Name="Chart.Title" value="Sankey" />
 	<Initiate Name="Caption.Text" Value="Sankey" />

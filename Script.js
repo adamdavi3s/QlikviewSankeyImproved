@@ -133,10 +133,12 @@ var index = {};
 var color = d3.scale.category20();
 var formatNumber = d3.format(",.0f");
 var format = function(d) {
-    return formatNumber(d) + " TWh";
+    return formatNumber(d) ;
 };
 var width = _this.GetWidth() * .95;
 var height = _this.GetHeight() * .95;
+var checkbox1 = _this.Layout.Text0.text.toString();
+
 
 //stop the script if source and destination are set to the same
 //This just forces the script to stop and not get stuck in a loop!
@@ -230,7 +232,7 @@ var link = svg.append("g").selectAll(".link")
 
 link.append("title")
     .text(function(d) {
-        return d.source.name + " → " + d.target.name + "\n" + format(d.value);
+        return d.source.name + " ->" + d.target.name + "\n" + format(d.value);
     });
 
 var node = svg.append("g").selectAll(".node")
@@ -279,7 +281,14 @@ node.append("text")
     .attr("text-anchor", "end")
     .attr("transform", null)
     .text(function(d) {
-        return d.name+ '-'+d.value;
+			if(checkbox1==0){
+						return d.name;
+									}
+			else{
+				return d.name+ ' '+d.value;	
+					
+			}
+       
     })
     .filter(function(d) {
         return d.x < width / 2;
@@ -306,7 +315,7 @@ function onclick(){
 	}
 }					
 					
-					
+				
 
 //****************************************************************************************************************
 //end your extension code here
@@ -321,10 +330,10 @@ function onclick(){
 
 
 //This loads up firebug within the qlikview application comment it out in live!
-//Qva.LoadScript('https://getfirebug.com/firebug-lite.js', function(){  //comment this row out in live
+Qva.LoadScript('https://getfirebug.com/firebug-lite.js', function(){  //comment this row out in live
 
 
 extensionInit(); //call the function that kicks everything off 
 
- //}); //comment this row out in live
+}); //comment this row out in live
 
