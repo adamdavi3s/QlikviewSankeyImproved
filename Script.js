@@ -330,10 +330,10 @@ function onclick(){
 
 
 //This loads up firebug within the qlikview application comment it out in live!
-Qva.LoadScript('https://getfirebug.com/firebug-lite.js', function(){  //comment this row out in live
+//Qva.LoadScript('https://getfirebug.com/firebug-lite.js', function(){  //comment this row out in live
 
 
 extensionInit(); //call the function that kicks everything off 
 
-}); //comment this row out in live
+//}); //comment this row out in live
 
