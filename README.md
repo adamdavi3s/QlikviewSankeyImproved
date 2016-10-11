@@ -19,4 +19,4 @@ Included is an example file which includes code to shred a delimited path into t
 Overall this isn’t a huge change, just a small refinement
 
 
-![](.\sankey.PNG)
+![](Sankey.PNG)
