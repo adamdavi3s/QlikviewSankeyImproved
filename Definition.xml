@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="Sankey" Description="Sankey" PageHeight="50000">
+	<Dimension Label="Source" Initial="" TargetName="Dimension Name" />
+	<Dimension Label="Destination" Initial="" TargetName="Dimension Name" />
+	<Measurement Label="Size" Initial="0"/>
+
+    	<Initiate Name="Chart.Title" value="Sankey" />
+	<Initiate Name="Caption.Text" Value="Sankey" />
+	<Initiate Name="Chart.Dimension.0.Field" Value="" />
+	<Initiate Name="Chart.Dimension.1.Field" Value="" />
+	<Initiate Name="Chart.Expression.0.0.Definition" Value="0" />
+  </ExtensionObject>
+
+
+
