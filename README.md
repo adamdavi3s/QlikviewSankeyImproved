@@ -17,3 +17,6 @@ So I got hold of the D3 code and slightly changed the way it works.
 Included is an example file which includes code to shred a delimited path into the two fields required
 
 Overall this isn’t a huge change, just a small refinement
+
+
+![](sankey.PNG)
